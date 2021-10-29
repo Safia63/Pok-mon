@@ -1,0 +1,13 @@
+
+<div *ngIf="pokemon !== null">
+  <h2>{{pokemon.name}} = {{pokemon.order}}</h2>
+  <div class="row">
+    <div class="col-8">
+      <img class="img-fluid" src="/assets/pkmn-types/type-{{pokemon.id}}.png">
+    </div>
+  </div>
+</div>
+
+<ng-template #affichagePoke>
+  <h2>No Pokemon</h2>
+</ng-template>
